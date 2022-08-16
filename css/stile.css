@@ -1,0 +1,291 @@
+:root {
+  /* Fonts */
+  --main-font-family: 'Roboto', sans-serif;
+
+  /* Colors */
+  --main-color: #212121;
+  --main-light-color: #ffffff;
+  --current-color: #2196f3;
+  --secondary-color: #757575;
+  --footer-color: #2f303a;
+  --button-color: #f5f4fa;
+  --footer-info-color: rgba(255, 255, 255, 0.6);
+  --button-hero-bg-color: #188ce8;
+  --Hero-Shadow-button-color: rgba(0, 0, 0, 0.15);
+  --Complementary-1-color: #ececec;
+  --Complementary-2-color: #000000;
+  --Complementary-3-color: #eeeeee;
+}
+
+body {
+  font-family: var(--main-font-family);
+  font-size: 14px;
+  color: var(--main-color);
+  letter-spacing: 0.03em;
+  background-color: var(--main-light-color);
+}
+
+.header-studio {
+  font-size: 26px;
+  line-height: 1.2;
+  font-weight: 700;
+  font-family: 'Raleway', sans-serif;
+  color: var(--main-color);
+}
+
+.header-web {
+  font-size: 26px;
+  line-height: 1.2;
+  font-weight: 700;
+  font-family: 'Raleway', sans-serif;
+  color: var(--current-color);
+}
+
+/* Footer Web */
+
+.footer-web {
+  color: var(--current-color);
+  font-size: 26px;
+  line-height: 1.2;
+  font-family: 'Raleway', sans-serif;
+}
+
+/* Footer Studio */
+
+.footer-studio {
+  color: var(--main-light-color);
+  font-size: 26px;
+  line-height: 1.2;
+  font-family: 'Raleway', sans-serif;
+}
+
+/* Фон футера */
+
+.footer {
+  background: var(--footer-color);
+}
+
+/* info footer  */
+
+.footer-info {
+  color: var(--footer-info-color);
+  font-size: 14px;
+  line-height: 1.7;
+  font-style: normal;
+}
+
+/* Ссылка address footer */
+
+.link-address {
+  color: var(--main-light-color);
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+/* Скрываем подчеркивание ссылок */
+
+a {
+  text-decoration: none;
+}
+
+/* Убираем маркеры */
+li {
+  list-style-type: none;
+}
+
+/* Скрываем h2 в index.html и h1 в portfolio.html */
+
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+
+/* Heder info  */
+
+.heder-info {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.1;
+  color: var(--secondary-color);
+  letter-spacing: 0.02em;
+}
+
+/* Hero-Section */
+
+.hero-title {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.3;
+  color: var(--main-light-color);
+  /* Текс большими буквами */
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+.hero-section {
+  background: var(--footer-color);
+}
+
+.hero-button {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.8;
+  letter-spacing: 0.06em;
+  cursor: pointer;
+  background-color: var(--current-color);
+  color: var(--main-light-color);
+}
+
+.section-title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.1;
+  color: var(--footer-color);
+  text-transform: uppercase;
+  /* Делает все буквы большими */
+}
+
+.section-paragraph {
+  font-size: 14px;
+  line-height: 1.7;
+  color: var(--secondary-color);
+}
+
+.title-work {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.1;
+  color: var(--main-color);
+}
+
+.img-tile {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.1;
+  color: var(--main-color);
+}
+
+.foto-paragraph {
+  font-size: 16px;
+  line-height: 1.1;
+  color: var(--secondary-color);
+}
+
+/* hover focus ссылок */
+
+.link:hover,
+.link:focus {
+  background-color: var(--current-color);
+  color: var(--current-color);
+
+  background-color: var(--main-light-color);
+}
+
+/* Ссылка хедера. */
+
+.list-header {
+  color: var(--main-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.1;
+  letter-spacing: 0.02em;
+}
+
+/* Дефолтные параметры кнопки */
+
+.button {
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6;
+  letter-spacing: 0.03em;
+  background-color: var(--main-light-color);
+}
+
+/* hover focus button */
+
+.button:hover,
+.button:focus {
+  background-color: var(--current-color);
+  color: var(--main-light-color);
+}
+
+.button-section {
+  background: var(--button-color);
+  color: var(--main-color);
+}
+
+/* Текст кнопок */
+
+.button-text {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+/* Hover footer address  */
+
+.footer-info:hover,
+.footer-info:focus,
+.link-address:hover,
+.link-address:focus {
+  color: var(--current-color);
+}
+
+/* Делает цвет синий в статическом состоянии */
+
+.caren-studio,
+.caren-portfolio {
+  color: var(--current-color);
+}
+
+/* Параграф ссылки*/
+
+.paragraph {
+  font-size: 16px;
+  line-height: 1.8;
+  color: var(--secondary-color);
+}
+
+/* Заголовок ссылки */
+
+.list-title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  color: var(--main-color);
+  letter-spacing: 0.06em;
+}
+
+/* Наша команда заливка секции в серый цвет */
+.section-team {
+  background-color: var(--button-color);
+}
+
+/* Наша команда заливка карточек в белый цвет */
+
+.cards-team {
+  background-color: var(--main-light-color);
+}
+
+/* Hover Focus Hero button */
+
+.hero-button:hover,
+.hero-button:focus {
+  background-color: var(--button-hero-bg-color);
+  box-shadow: 0px 4px 4px var(--Hero-Shadow-button-color);
+  border-radius: 4px;
+}
