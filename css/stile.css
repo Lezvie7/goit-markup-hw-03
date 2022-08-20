@@ -178,7 +178,9 @@ img {
 
 .section-title-work {
   display: flex;
-  column-gap: 30px;
+  flex-wrap: wrap;
+  gap: 30px;
+  flex-basis: calc((100% - 60px) / 3);
 }
 
 .hero-button {
@@ -397,7 +399,9 @@ img {
 
 .cards-team {
   display: flex;
-  column-gap: 30px;
+  gap: 30px;
+  flex-wrap: wrap;
+  flex-basis: calc((100% - 90px) / 4);
 }
 
 /* Footer Web */
