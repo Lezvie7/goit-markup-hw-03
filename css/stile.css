@@ -313,12 +313,13 @@ img {
 .Gallery {
   display: flex;
   flex-wrap: wrap;
-  column-gap: 30px;
+  gap: 30px;
+  flex-basis: calc((100% - 60px) / 3);
 }
 
 .Gallery-box {
   padding: 20px 24px;
-  /* border-bottom-width: 1px;
+  border-bottom-width: 1px;
   border-right-width: 1px;
   border-left-width: 1px;
   border-bottom-style: solid;
@@ -326,7 +327,7 @@ img {
   border-left-style: solid;
   border-bottom-color: var(--border-box-Gallery);
   border-right-color: var(--border-box-Gallery);
-  border-right-color: var(--border-box-Gallery); */
+  border-left-color: var(--border-box-Gallery);
 }
 
 /* .paragraph-border {
