@@ -1,3 +1,31 @@
+:root {
+  /* Fonts */
+  --main-font-family: 'Roboto', sans-serif;
+
+  /* Colors */
+  --main-color: #212121;
+  --main-light-color: #ffffff;
+  --current-color: #2196f3;
+  --secondary-color: #757575;
+  --footer-color: #2f303a;
+  --button-color: #f5f4fa;
+  --footer-info-color: rgba(255, 255, 255, 0.6);
+  --button-hero-bg-color: #188ce8;
+  --Hero-Shadow-button-color: rgba(0, 0, 0, 0.15);
+  --header-border: #ececec;
+  --Complementary-2-color: #000000;
+  --Complementary-3-color: #eeeeee;
+}
+
+body {
+  font-family: var(--main-font-family);
+  font-size: 14px;
+  color: var(--main-color);
+  letter-spacing: 0.03em;
+  background-color: var(--main-light-color);
+  margin: 0;
+}
+
 h1,
 h2,
 h3,
@@ -14,7 +42,25 @@ ol {
   padding-left: 0;
 }
 
-/* button {
+/* Скрываем подчеркивание ссылок */
+
+a {
+  text-decoration: none;
+}
+
+/* Убираем маркеры */
+li {
+  list-style-type: none;
+}
+
+/* Глобальный border-box */
+/* *,
+*::before,
+*::after {
+  box-sizing: border-box;
+} */
+
+button {
   cursor: pointer;
 }
 
@@ -22,44 +68,28 @@ img {
   display: block;
 }
 
-.list {
-  list-style: none;
+.container {
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
-.link {
-  text-decoration: none;
+.button-nav {
+  display: flex;
+  align-items: center;
+  column-gap: 50px;
 }
 
-.title {
-  border: 1px solid tomato;
-  margin-bottom: 20px;
-} */
-
-:root {
-  /* Fonts */
-  --main-font-family: 'Roboto', sans-serif;
-
-  /* Colors */
-  --main-color: #212121;
-  --main-light-color: #ffffff;
-  --current-color: #2196f3;
-  --secondary-color: #757575;
-  --footer-color: #2f303a;
-  --button-color: #f5f4fa;
-  --footer-info-color: rgba(255, 255, 255, 0.6);
-  --button-hero-bg-color: #188ce8;
-  --Hero-Shadow-button-color: rgba(0, 0, 0, 0.15);
-  --Complementary-1-color: #ececec;
-  --Complementary-2-color: #000000;
-  --Complementary-3-color: #eeeeee;
+.contacts-header {
+  display: flex;
+  margin-left: auto;
+  align-items: center;
 }
 
-body {
-  font-family: var(--main-font-family);
-  font-size: 14px;
-  color: var(--main-color);
-  letter-spacing: 0.03em;
-  background-color: var(--main-light-color);
+.nav-container {
+  display: flex;
 }
 
 .header-studio {
@@ -70,65 +100,21 @@ body {
   color: var(--main-color);
 }
 
+.header-border {
+  border-bottom: 1px solid var(--header-border);
+}
+
 .header-web {
   font-size: 26px;
   line-height: 1.2;
   font-weight: 700;
   font-family: 'Raleway', sans-serif;
   color: var(--current-color);
-}
-
-/* Footer Web */
-
-.footer-web {
-  color: var(--current-color);
-  font-size: 26px;
-  line-height: 1.2;
-  font-family: 'Raleway', sans-serif;
-}
-
-/* Footer Studio */
-
-.footer-studio {
-  color: var(--main-light-color);
-  font-size: 26px;
-  line-height: 1.2;
-  font-family: 'Raleway', sans-serif;
-}
-
-/* Фон футера */
-
-.footer {
-  background: var(--footer-color);
-}
-
-/* info footer  */
-
-.footer-info {
-  color: var(--footer-info-color);
-  font-size: 14px;
-  line-height: 1.7;
-  font-style: normal;
-}
-
-/* Ссылка address footer */
-
-.link-address {
-  color: var(--main-light-color);
-  font-style: normal;
-  font-size: 14px;
-  line-height: 1.7;
-}
-
-/* Скрываем подчеркивание ссылок */
-
-a {
-  text-decoration: none;
-}
-
-/* Убираем маркеры */
-li {
-  list-style-type: none;
+  display: flex;
+  margin-right: 93px;
+  padding-top: 24px;
+  padding-bottom: 25px;
+  flex-direction: row;
 }
 
 /* Скрываем h2 в index.html и h1 в portfolio.html */
@@ -154,6 +140,11 @@ li {
   line-height: 1.1;
   color: var(--secondary-color);
   letter-spacing: 0.02em;
+  margin-left: 50px;
+  display: inline-block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  /* padding для кликабельности */
 }
 
 /* Hero-Section */
@@ -166,14 +157,32 @@ li {
   /* Текс большими буквами */
   text-transform: uppercase;
   letter-spacing: 0.06em;
+  margin-bottom: 30px;
 }
 
 .hero-section {
   background: var(--footer-color);
+  padding-top: 200px;
+  padding-bottom: 200px;
+  text-align: center;
+}
+
+.hero-box {
+  width: 700px;
+}
+
+.total-section {
+  padding-bottom: 94px;
+  padding-top: 94px;
+}
+
+.section-title-work {
+  display: flex;
+  column-gap: 30px;
 }
 
 .hero-button {
-  font-family: 'Roboto';
+  font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
@@ -182,6 +191,16 @@ li {
   cursor: pointer;
   background-color: var(--current-color);
   color: var(--main-light-color);
+  border-radius: 4px;
+  box-shadow: 0px 4px 4px var(--Hero-Shadow-button-color);
+  padding: 10px 32px;
+  border: none;
+}
+
+.Our-features {
+  display: flex;
+  column-gap: 30px;
+  /* align-items: center; */
 }
 
 .section-title {
@@ -189,8 +208,9 @@ li {
   font-size: 14px;
   line-height: 1.1;
   color: var(--footer-color);
-  text-transform: uppercase;
   /* Делает все буквы большими */
+  text-transform: uppercase;
+  margin-bottom: 10px;
 }
 
 .section-paragraph {
@@ -204,6 +224,8 @@ li {
   font-size: 36px;
   line-height: 1.1;
   color: var(--main-color);
+  margin-bottom: 50px;
+  text-align: center;
 }
 
 .img-tile {
@@ -211,6 +233,7 @@ li {
   font-size: 16px;
   line-height: 1.1;
   color: var(--main-color);
+  margin-bottom: 10px;
 }
 
 .foto-paragraph {
@@ -237,6 +260,10 @@ li {
   font-size: 14px;
   line-height: 1.1;
   letter-spacing: 0.02em;
+  display: inline-block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  /* padding для кликабельности */
 }
 
 /* Дефолтные параметры кнопки */
@@ -252,6 +279,15 @@ li {
   background-color: var(--main-light-color);
 }
 
+/* Hover Focus Hero button */
+
+.hero-button:hover,
+.hero-button:focus {
+  background-color: var(--button-hero-bg-color);
+  box-shadow: 0px 4px 4px var(--Hero-Shadow-button-color);
+  border-radius: 4px;
+}
+
 /* hover focus button */
 
 .button:hover,
@@ -263,6 +299,25 @@ li {
 .button-section {
   background: var(--button-color);
   color: var(--main-color);
+  padding: 6px 22px;
+  border-radius: 4px;
+}
+
+.button-box {
+  display: flex;
+  justify-content: center;
+  column-gap: 8px;
+  margin-bottom: 34px;
+}
+
+.Gallery {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 30px;
+}
+
+.Gallery-box {
+  padding: 20px 24px;
 }
 
 /* Текст кнопок */
@@ -271,15 +326,6 @@ li {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.6;
-}
-
-/* Hover footer address  */
-
-.footer-info:hover,
-.footer-info:focus,
-.link-address:hover,
-.link-address:focus {
-  color: var(--current-color);
 }
 
 /* Делает цвет синий в статическом состоянии */
@@ -297,6 +343,13 @@ li {
   color: var(--secondary-color);
 }
 
+/*Portfolio Section */
+
+.portfolio-box {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
 /* Заголовок ссылки */
 
 .list-title {
@@ -305,6 +358,7 @@ li {
   line-height: 2;
   color: var(--main-color);
   letter-spacing: 0.06em;
+  margin-bottom: 4px;
 }
 
 /* Наша команда заливка секции в серый цвет */
@@ -314,15 +368,76 @@ li {
 
 /* Наша команда заливка карточек в белый цвет */
 
-.cards-team {
+.cards-team-box {
+  padding: 30px;
   background-color: var(--main-light-color);
 }
 
-/* Hover Focus Hero button */
+.cards-team {
+  display: flex;
+  column-gap: 30px;
+}
 
-.hero-button:hover,
-.hero-button:focus {
-  background-color: var(--button-hero-bg-color);
-  box-shadow: 0px 4px 4px var(--Hero-Shadow-button-color);
-  border-radius: 4px;
+/* Footer Web */
+
+.footer-web {
+  color: var(--current-color);
+  font-size: 26px;
+  line-height: 1.2;
+  font-family: 'Raleway', sans-serif;
+  display: inline-block;
+  margin-bottom: 20px;
+}
+
+/* Footer Studio */
+
+.footer-studio {
+  color: var(--main-light-color);
+  font-size: 26px;
+  line-height: 1.2;
+  font-family: 'Raleway', sans-serif;
+}
+
+/* Фон футера */
+
+.footer {
+  background: var(--footer-color);
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.footer-box {
+  display: inline-block;
+  margin-bottom: 9px;
+}
+
+/* info footer  */
+
+.footer-info {
+  color: var(--footer-info-color);
+  font-size: 14px;
+  line-height: 1.7;
+  font-style: normal;
+}
+
+.footer-info-box {
+  margin-bottom: 9px;
+}
+
+/* Ссылка address footer */
+
+.link-address {
+  color: var(--main-light-color);
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+/* Hover footer address  */
+
+.footer-info:hover,
+.footer-info:focus,
+.link-address:hover,
+.link-address:focus {
+  color: var(--current-color);
 }
