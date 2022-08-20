@@ -197,10 +197,17 @@ img {
   border: none;
 }
 
-.Our-features {
+/* 2 варианта gap */
+
+/* .Our-features {
   display: flex;
   column-gap: 30px;
   /* align-items: center; */
+
+.Our-features {
+  display: flex;
+  gap: 30px;
+  flex-basis: calc((100% - 90px) / 4);
 }
 
 .section-title {
