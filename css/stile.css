@@ -14,7 +14,7 @@
   --Hero-Shadow-button-color: rgba(0, 0, 0, 0.15);
   --header-border: #ececec;
   --Complementary-2-color: #000000;
-  --Complementary-3-color: #eeeeee;
+  --border-box-Gallery: #eeeeee;
 }
 
 body {
@@ -318,7 +318,21 @@ img {
 
 .Gallery-box {
   padding: 20px 24px;
+  /* border-bottom-width: 1px;
+  border-right-width: 1px;
+  border-left-width: 1px;
+  border-bottom-style: solid;
+  border-right-style: solid;
+  border-left-style: solid;
+  border-bottom-color: var(--border-box-Gallery);
+  border-right-color: var(--border-box-Gallery);
+  border-right-color: var(--border-box-Gallery); */
 }
+
+/* .paragraph-border {
+  margin-bottom: 20px;
+  border-bottom: 1px solid var(--border-box-Gallery);
+} */
 
 /* Текст кнопок */
 
