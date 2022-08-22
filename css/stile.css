@@ -459,12 +459,6 @@ li {
   padding-top: 60px;
   padding-bottom: 60px;
 }
-
-.footer-box {
-  display: inline-block;
-  margin-bottom: 9px;
-}
-
 /* info footer  */
 
 .footer-info {
@@ -474,7 +468,7 @@ li {
   font-style: normal;
 }
 
-.footer-info-box {
+.footer-item {
   margin-bottom: 9px;
 }
 
