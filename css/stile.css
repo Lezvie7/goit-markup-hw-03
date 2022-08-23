@@ -26,7 +26,6 @@ body {
   color: var(--main-color);
   letter-spacing: 0.03em;
   background-color: var(--main-light-color);
-  margin: 0;
 }
 
 h1,
@@ -290,7 +289,8 @@ li {
   /* padding для кликабельности */
 }
 
-.contact-sites-item {
+/* Header телефон и ссылка через селектор соседа  */
+.contacts-header .item + .item {
   margin-left: 50px;
 }
 
